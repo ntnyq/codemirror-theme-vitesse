@@ -20,6 +20,35 @@ yarn add codemirror-theme-vitesse
 pnpm add codemirror-theme-vitesse
 ```
 
+## Usage
+
+```ts
+import { EditorView } from '@codemirror/view'
+import { EditorState } from '@codemirror/state'
+import { javascript } from '@codemirror/lang-javascript'
+import { vitesseLight } from 'codemirror-theme-vitesse'
+// import { vitesseDark } from 'codemirror-theme-vitesse'
+// import { vitesseBlack } from 'codemirror-theme-vitesse'
+
+const state = EditorState.create({
+  doc: `const foo = 'hello world'`,
+  extensions: [
+    // or vitesseDark, vitesseBlack
+    vitesseLight,
+    javascript({ jsx: true }),
+  ],
+})
+const view = new EditorView({
+  parent: document.querySelector('#editor'),
+  state,
+})
+```
+
+## Credits
+
+- [antfu/vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse)
+- [shikijs/textmate-grammars-themes](https://github.com/shikijs/textmate-grammars-themes)
+
 ## License
 
 [MIT](./LICENSE) License © 2024-PRESENT [ntnyq](https://github.com/ntnyq)
