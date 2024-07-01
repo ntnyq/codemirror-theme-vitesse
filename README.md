@@ -43,6 +43,28 @@ const view = new EditorView({
 })
 ```
 
+### Subpath import
+
+```ts
+import { vitesseLight } from 'codemirror-theme-vitesse/light'
+import { vitesseDark } from 'codemirror-theme-vitesse/dark'
+import { vitesseBlack } from 'codemirror-theme-vitesse/black'
+```
+
+### Overrides default theme
+
+Check more override settings by inspecting the type definition.
+
+```ts
+import { createVitesseLightTheme } from 'codemirror-theme-vitesse'
+
+const vitesseLight = createVitesseLightTheme({
+  settings: {
+    background: '#fff9c4',
+  },
+})
+```
+
 ## Credits
 
 - [antfu/vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse)
