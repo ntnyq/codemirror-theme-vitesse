@@ -1,21 +1,47 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { useStorage } from '@vueuse/core'
 import Navbar from './components/Navbar.vue'
 import CodeEditor from './components/CodeEditor/index.vue'
-import typescript from './examples/typescript.ts?raw'
 import { themes } from './components/CodeEditor/theme'
 import { isDark } from './hooks/useDark'
+import Select from './components/Select.vue'
+import { languages } from './components/CodeEditor/language'
 
-const code = ref(typescript)
-const language = ref('typescript')
+type Theme = keyof typeof themes
 
-const lightTheme = ref('vitesseLight')
-const darkTheme = ref('vitesseDark')
+const code = ref('')
+
+const language = useStorage('language', 'typescript')
+const lightTheme = useStorage('lightTheme', 'vitesseLight')
+const darkTheme = useStorage('darkTheme', 'vitesseDark')
 
 const activeTheme = computed(() =>
-  isDark.value
-    ? themes[darkTheme.value as keyof typeof themes]
-    : themes[lightTheme.value as keyof typeof themes],
+  isDark.value ? themes[darkTheme.value as Theme] : themes[lightTheme.value as Theme],
+)
+
+const languageOptions = computed(() =>
+  languages.map(lang => ({
+    label: lang.name,
+    value: lang.id,
+  })),
+)
+
+async function update() {
+  const sample = await import(`./samples/${language.value}.sample?raw`)
+    .then(m => m.default)
+    .catch(() => `// No sample found for ${language.value}`)
+  code.value = sample
+}
+
+watch(
+  language,
+  () => {
+    update()
+  },
+  {
+    immediate: true,
+  },
 )
 </script>
 
@@ -23,49 +49,35 @@ const activeTheme = computed(() =>
   <main class="h-screen flex flex-col relative">
     <Navbar />
     <div class="max-w-[1200px] mx-auto md:flex gap-4">
-      <div class="flex items-center gap-3 p-2">
-        <label
-          class="text-base"
-          for="light_theme"
-        >
-          Light Theme
-        </label>
-        <select
-          v-model="lightTheme"
-          id="light_theme"
-          class="w-48 px-2 py-1 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-          placeholder="Select light theme"
-        >
-          <option
-            value="vitesseLight"
-            selected
-          >
-            Vitesse Light
-          </option>
-        </select>
-      </div>
-      <div class="flex items-center gap-3 p-2">
-        <label
-          class="text-base"
-          for="dark_theme"
-        >
-          Dark Theme
-        </label>
-        <select
-          v-model="darkTheme"
-          id="dark_theme"
-          class="w-48 px-2 py-1 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-          placeholder="Select dark theme"
-        >
-          <option
-            value="vitesseDark"
-            selected
-          >
-            Vitesse Dark
-          </option>
-          <option value="vitesseBlack">Vitesse Black</option>
-        </select>
-      </div>
+      <Select
+        v-model="language"
+        :options="languageOptions"
+        label="Language"
+      />
+      <Select
+        v-model="lightTheme"
+        :options="[
+          {
+            label: 'Vitesse Light',
+            value: 'vitesseLight',
+          },
+        ]"
+        label="Light Theme"
+      />
+      <Select
+        v-model="darkTheme"
+        :options="[
+          {
+            label: 'Vitesse Dark',
+            value: 'vitesseDark',
+          },
+          {
+            label: 'Vitesse Black',
+            value: 'vitesseBlack',
+          },
+        ]"
+        label="Dark Theme"
+      />
     </div>
     <div class="flex-auto w-full p-4 max-w-[1200px] mx-auto of-y-auto">
       <CodeEditor

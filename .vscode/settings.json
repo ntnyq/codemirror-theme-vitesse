@@ -31,5 +31,6 @@
     "vitest",
     "vueuse"
   ],
+  "cSpell.ignorePaths": ["**/*.sample"],
   "cSpell.allowCompoundWords": true
 }
