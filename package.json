@@ -67,7 +67,6 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
-    "coverage": "vitest --coverage",
     "dev": "tsup --watch",
     "lint": "eslint .",
     "play": "pnpm -C playground run dev",
@@ -75,9 +74,8 @@
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
     "release": "run-s release:check release:publish",
-    "release:check": "run-s lint typecheck test",
+    "release:check": "run-s lint typecheck",
     "release:publish": "bumpp && pnpm publish",
-    "test": "vitest --passWithNoTests",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -88,7 +86,6 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "^2.4.0",
     "@ntnyq/prettier-config": "^1.21.2",
-    "@vitest/coverage-v8": "^1.6.0",
     "bumpp": "^9.4.1",
     "eslint": "^9.6.0",
     "husky": "^9.0.11",
@@ -97,8 +94,7 @@
     "pnpm": "^9.4.0",
     "prettier": "^3.3.2",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2",
-    "vitest": "^1.6.0"
+    "typescript": "^5.5.2"
   },
   "engines": {
     "node": ">=18.18.0"
