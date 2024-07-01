@@ -18,7 +18,7 @@ export const createVitesseDarkTheme = (options: Partial<CreateThemeOptions> = {}
     theme,
     settings: { ...defaultSettingsVitesseDark, ...settings },
     styles: [
-      { tag: [t.standard(t.tagName), t.tagName], color: '#116329' },
+      { tag: [t.standard(t.tagName), t.tagName], color: '#4d9375' },
       { tag: [t.comment], color: '#758575dd' },
       { tag: [t.bracket], color: '#666666' },
       { tag: [t.className, t.propertyName], color: '#5DA994' },
@@ -28,9 +28,9 @@ export const createVitesseDarkTheme = (options: Partial<CreateThemeOptions> = {}
       { tag: [t.string, t.meta], color: '#c98a7d' },
       { tag: [t.regexp], color: '#c4704f' },
       { tag: [t.name], color: '#22863a' },
-      { tag: [t.quote], color: '#c98a7d99' },
-      { tag: [t.heading, t.strong], color: '#24292e', fontWeight: 'bold' },
-      { tag: [t.emphasis], color: '#24292e', fontStyle: 'italic' },
+      { tag: [t.quote], color: '#5d99a9' },
+      { tag: [t.heading, t.strong], color: '#dbd7cacc', fontWeight: 'bold' },
+      { tag: [t.emphasis], color: '#dbd7cacc', fontStyle: 'italic' },
       // cSpell: disable-next-line
       { tag: [t.deleted], color: '#fdaeb7', backgroundColor: '86181d' },
       { tag: [t.atom, t.bool, t.special(t.variableName)], color: '#4d9375' },
