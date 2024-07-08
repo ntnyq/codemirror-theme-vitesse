@@ -2,7 +2,7 @@
   "name": "codemirror-theme-vitesse",
   "type": "module",
   "version": "0.1.1",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.5.0",
   "description": "__TODO__",
   "keywords": [],
   "license": "MIT",
@@ -81,20 +81,20 @@
   "dependencies": {
     "@codemirror/state": "^6.4.1",
     "@lezer/highlight": "^1.2.0",
-    "@uiw/codemirror-themes": "^4.22.2"
+    "@uiw/codemirror-themes": "^4.23.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^2.4.0",
+    "@ntnyq/eslint-config": "^2.5.1",
     "@ntnyq/prettier-config": "^1.21.2",
     "bumpp": "^9.4.1",
     "eslint": "^9.6.0",
     "husky": "^9.0.11",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^6.2.0",
-    "pnpm": "^9.4.0",
+    "npm-run-all2": "^6.2.2",
+    "pnpm": "^9.5.0",
     "prettier": "^3.3.2",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "engines": {
     "node": ">=18.18.0"
