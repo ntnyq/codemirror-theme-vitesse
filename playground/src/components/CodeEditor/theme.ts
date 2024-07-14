@@ -9,3 +9,5 @@ export const themes = {
   vitesseDark,
   vitesseLight,
 }
+
+export type ThemeName = keyof typeof themes

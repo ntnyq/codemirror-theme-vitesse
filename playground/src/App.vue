@@ -7,17 +7,16 @@ import { themes } from './components/CodeEditor/theme'
 import { isDark } from './hooks/useDark'
 import Select from './components/Select.vue'
 import { languages } from './components/CodeEditor/language'
-
-type Theme = keyof typeof themes
+import type { ThemeName } from './components/CodeEditor/theme'
 
 const code = ref('')
 
 const language = useStorage('language', 'typescript')
-const lightTheme = useStorage('lightTheme', 'vitesseLight')
-const darkTheme = useStorage('darkTheme', 'vitesseDark')
+const lightTheme = useStorage<ThemeName>('lightTheme', 'vitesseLight')
+const darkTheme = useStorage<ThemeName>('darkTheme', 'vitesseDark')
 
 const activeTheme = computed(() =>
-  isDark.value ? themes[darkTheme.value as Theme] : themes[lightTheme.value as Theme],
+  isDark.value ? themes[darkTheme.value] : themes[lightTheme.value],
 )
 
 const languageOptions = computed(() =>

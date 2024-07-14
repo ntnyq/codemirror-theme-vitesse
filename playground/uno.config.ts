@@ -13,7 +13,7 @@ export default defineConfig({
     'bg-base': 'bg-$c-bg-base',
     'text-base': 'text-$c-text-base',
     'btn-icon':
-      'h-8 w-8 inline-flex items-center justify-center rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700',
+      'h-10 w-10 inline-flex items-center text-xl justify-center rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700',
   },
 
   presets: [presetUno(), presetIcons()],

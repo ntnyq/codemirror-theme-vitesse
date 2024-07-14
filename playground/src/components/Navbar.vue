@@ -4,9 +4,11 @@ import { toggleDark } from '../hooks/useDark'
 </script>
 
 <template>
-  <div class="flex flex-wrap h-$h-navbar items-center justify-between border-b border-base p-2">
+  <div
+    class="flex flex-wrap h-$h-navbar items-center justify-between border-b border-base py-2 px-4"
+  >
     <div class="flex gap-1">
-      <h1 class="text-lg font-semibold">CodeMirror Theme Vitesse</h1>
+      <h1 class="text-xl font-semibold">CodeMirror Theme Vitesse</h1>
       <small>v{{ version }}</small>
     </div>
 

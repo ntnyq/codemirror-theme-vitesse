@@ -5,6 +5,8 @@
 [![NPM DOWNLOADS](https://img.shields.io/npm/dy/codemirror-theme-vitesse.svg)](https://www.npmjs.com/package/codemirror-theme-vitesse)
 [![LICENSE](https://img.shields.io/github/license/ntnyq/codemirror-theme-vitesse.svg)](https://github.com/ntnyq/codemirror-theme-vitesse/blob/main/LICENSE)
 
+Codemirror theme in vitesse style.
+
 ## Install
 
 ```bash
