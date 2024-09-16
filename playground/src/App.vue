@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { computed, ref, watch } from 'vue'
 import { useStorage } from '@vueuse/core'
-import Navbar from './components/Navbar.vue'
+import { computed, ref, watch } from 'vue'
 import CodeEditor from './components/CodeEditor/index.vue'
-import { themes } from './components/CodeEditor/theme'
-import { isDark } from './hooks/useDark'
-import Select from './components/Select.vue'
 import { languages } from './components/CodeEditor/language'
+import { themes } from './components/CodeEditor/theme'
+import Navbar from './components/Navbar.vue'
+import Select from './components/Select.vue'
+import { isDark } from './hooks/useDark'
 import type { ThemeName } from './components/CodeEditor/theme'
 
 const code = ref('')

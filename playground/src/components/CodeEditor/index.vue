@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import { Codemirror } from 'vue-codemirror'
 import { languages } from './language'
-import type { Props } from 'vue-codemirror'
 import type { Extension } from '@codemirror/state'
+import type { Props } from 'vue-codemirror'
 
 type CodeEditorProps = Omit<Partial<Props>, 'modelValue'> & {
   language?: string

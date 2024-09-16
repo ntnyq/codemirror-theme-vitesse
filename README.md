@@ -24,9 +24,9 @@ pnpm add codemirror-theme-vitesse
 ## Usage
 
 ```ts
-import { EditorView } from '@codemirror/view'
-import { EditorState } from '@codemirror/state'
 import { javascript } from '@codemirror/lang-javascript'
+import { EditorState } from '@codemirror/state'
+import { EditorView } from '@codemirror/view'
 import { vitesseLight } from 'codemirror-theme-vitesse'
 // import { vitesseDark } from 'codemirror-theme-vitesse'
 // import { vitesseBlack } from 'codemirror-theme-vitesse'
@@ -48,9 +48,9 @@ const view = new EditorView({
 ### Subpath import
 
 ```ts
-import { vitesseLight } from 'codemirror-theme-vitesse/light'
-import { vitesseDark } from 'codemirror-theme-vitesse/dark'
 import { vitesseBlack } from 'codemirror-theme-vitesse/black'
+import { vitesseDark } from 'codemirror-theme-vitesse/dark'
+import { vitesseLight } from 'codemirror-theme-vitesse/light'
 ```
 
 ### Overrides default theme
