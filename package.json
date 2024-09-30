@@ -90,8 +90,8 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "^3.0.0-beta.17",
     "@ntnyq/prettier-config": "^1.21.3",
-    "bumpp": "^9.5.2",
-    "eslint": "^9.11.0",
+    "bumpp": "^9.6.1",
+    "eslint": "^9.11.1",
     "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^6.2.3",
