@@ -18,17 +18,17 @@
     "@codemirror/lang-vue": "^0.1.3",
     "@codemirror/lang-yaml": "^6.1.1",
     "@codemirror/language": "^6.10.3",
-    "@iconify/json": "^2.2.256",
-    "@unocss/reset": "0.63.3",
+    "@iconify/json": "^2.2.259",
+    "@unocss/reset": "0.63.4",
     "@vueuse/core": "^11.1.0",
     "codemirror": "^6.0.1",
     "codemirror-theme-vitesse": "workspace:*",
-    "vue": "^3.5.11",
+    "vue": "^3.5.12",
     "vue-codemirror": "^6.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
-    "unocss": "^0.63.3",
+    "unocss": "^0.63.4",
     "vite": "^5.4.8"
   }
 }
