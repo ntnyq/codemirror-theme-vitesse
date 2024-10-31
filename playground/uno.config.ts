@@ -16,7 +16,14 @@ export default defineConfig({
       'h-10 w-10 inline-flex items-center text-xl justify-center rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700',
   },
 
-  presets: [presetUno(), presetIcons()],
+  presets: [
+    presetUno(),
+    presetIcons({
+      scale: 1.2,
+      autoInstall: true,
+      extraProperties: {},
+    }),
+  ],
 
   transformers: [transformerDirectives(), transformerVariantGroup()],
 })

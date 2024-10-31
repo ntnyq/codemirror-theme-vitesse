@@ -8,7 +8,7 @@ const selectedValue = defineModel<string>()
 </script>
 
 <template>
-  <div class="flex items-center gap-3 p-2">
+  <div class="flex justify-between items-center gap-3 p-2">
     <label class="text-base">
       {{ label }}
     </label>
