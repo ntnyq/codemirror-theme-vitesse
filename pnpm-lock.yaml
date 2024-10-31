@@ -17,6 +17,9 @@ importers:
       '@uiw/codemirror-themes':
         specifier: ^4.23.6
         version: 4.23.6(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.28.3)
+      codemirror:
+        specifier: ^6.0.0
+        version: 6.0.1(@lezer/common@1.2.1)
     devDependencies:
       '@ntnyq/eslint-config':
         specifier: ^3.1.2
@@ -39,9 +42,6 @@ importers:
       npm-run-all2:
         specifier: ^7.0.1
         version: 7.0.1
-      pnpm:
-        specifier: ^9.12.3
-        version: 9.12.3
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -2455,11 +2455,6 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-
-  pnpm@9.12.3:
-    resolution: {integrity: sha512-zOD53pxafJW++UQWnMXf6HQav7FFB4wNUIuGgFaEiofIHmJiRstglny9f9KabAYu9z/4QNlrPIbECsks9KgT7g==}
-    engines: {node: '>=18.12'}
-    hasBin: true
 
   postcss-load-config@6.0.1:
     resolution: {integrity: sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==}
@@ -5593,8 +5588,6 @@ snapshots:
       pathe: 1.1.2
 
   pluralize@8.0.0: {}
-
-  pnpm@9.12.3: {}
 
   postcss-load-config@6.0.1(jiti@2.0.0)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.4.5):
     dependencies:
