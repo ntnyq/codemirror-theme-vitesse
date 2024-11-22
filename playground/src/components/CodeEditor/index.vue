@@ -13,7 +13,9 @@ const props = withDefaults(defineProps<CodeEditorProps>(), {
   indentWithTab: true,
   tabSize: 2,
 })
-
+defineOptions({
+  inheritAttrs: false,
+})
 const code = defineModel<string>()
 
 const resolvedExtensions = computed<Extension[]>(() => [
