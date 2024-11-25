@@ -91,7 +91,7 @@
     "@uiw/codemirror-themes": "^4.23.6"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.3.0",
+    "@ntnyq/eslint-config": "^3.3.1",
     "@ntnyq/prettier-config": "^1.22.0",
     "bumpp": "^9.8.1",
     "eslint": "^9.15.0",
@@ -100,7 +100,7 @@
     "npm-run-all2": "^7.0.1",
     "prettier": "^3.3.3",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "engines": {
     "node": ">=18.18.0"
