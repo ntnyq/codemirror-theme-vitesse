@@ -2,7 +2,7 @@
   "name": "codemirror-theme-vitesse",
   "type": "module",
   "version": "0.1.4",
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.15.0",
   "description": "Codemirror theme in vitesse style.",
   "keywords": [
     "codemirror",
@@ -91,21 +91,20 @@
     "@uiw/codemirror-themes": "^4.23.6"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.3.1",
+    "@ntnyq/eslint-config": "^3.9.1",
     "@ntnyq/prettier-config": "^1.22.0",
-    "bumpp": "^9.8.1",
-    "eslint": "^9.15.0",
+    "bumpp": "^9.9.0",
+    "eslint": "^9.16.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.1",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
   "engines": {
     "node": ">=18.18.0"
   },
-  "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,json,md,yml,yaml}": "eslint --fix"
   }
