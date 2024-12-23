@@ -33,7 +33,6 @@ export const createVitesseLightTheme = (options: Partial<CreateThemeOptions> = {
       { tag: [t.quote], color: '#2e808f' },
       { tag: [t.heading, t.strong], color: '#393a34', fontWeight: 'bold' },
       { tag: [t.emphasis], color: '#393a34', fontStyle: 'italic' },
-      // cSpell: disable-next-line
       { tag: [t.deleted], color: '#b31d28', backgroundColor: 'ffeef0' },
       { tag: [t.atom, t.bool, t.special(t.variableName)], color: '#1e754f' },
       { tag: [t.url, t.escape, t.link], color: '#393a3490' },

@@ -33,7 +33,6 @@ export const createVitesseDarkTheme = (options: Partial<CreateThemeOptions> = {}
       { tag: [t.quote], color: '#5d99a9' },
       { tag: [t.heading, t.strong], color: '#dbd7cacc', fontWeight: 'bold' },
       { tag: [t.emphasis], color: '#dbd7cacc', fontStyle: 'italic' },
-      // cSpell: disable-next-line
       { tag: [t.deleted], color: '#fdaeb7', backgroundColor: '86181d' },
       { tag: [t.atom, t.bool, t.special(t.variableName)], color: '#4d9375' },
       { tag: [t.url, t.escape, t.link], color: '#dedcd590' },
