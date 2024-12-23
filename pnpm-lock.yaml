@@ -88,8 +88,8 @@ importers:
         specifier: ^1.2.5
         version: 1.2.5
       '@unocss/reset':
-        specifier: 0.65.1
-        version: 0.65.1
+        specifier: 0.65.2
+        version: 0.65.2
       '@vueuse/core':
         specifier: ^12.2.0
         version: 12.2.0(typescript@5.7.2)
@@ -1071,9 +1071,6 @@ packages:
 
   '@unocss/preset-wind@0.65.2':
     resolution: {integrity: sha512-qNBJ6pnh9EYbTztmeJ+uZOB3TPx/JnQVHPGBBRD/v2AT11YR0/umdSKefIHbvXKuw/5/+JAwbFx/jSYu1naG6w==}
-
-  '@unocss/reset@0.65.1':
-    resolution: {integrity: sha512-qyxF7rKGX+Cu3FpV8KCRQbtCvFcBpmzvx5A2wal77tIhrFR5VSH7NzCVmgs2+V9FXvU3aWVNZ79i1KMnLZ5Mjg==}
 
   '@unocss/reset@0.65.2':
     resolution: {integrity: sha512-9UmwqYjfdxyi6j1pMfuulipLCsdH2RlF+IOG53unYxulP4C8bvwMnj8Wk+AjMiG5mIOClYyVTGk3NMRPM73/eg==}
@@ -3857,8 +3854,6 @@ snapshots:
       '@unocss/core': 0.65.2
       '@unocss/preset-mini': 0.65.2
       '@unocss/rule-utils': 0.65.2
-
-  '@unocss/reset@0.65.1': {}
 
   '@unocss/reset@0.65.2': {}
 
