@@ -105,7 +105,13 @@
   "engines": {
     "node": ">=18.18.0"
   },
+  "pnpm": {
+    "overrides": {
+      "@codemirror/state": "^6.5.1"
+    }
+  },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,vue,json,md,yml,yaml}": "eslint --fix"
+    "*.{js,ts,mjs,cjs,vue,json,md,yml,yaml}": "eslint --fix",
+    "*.{css,html}": "prettier -wu"
   }
 }
