@@ -91,7 +91,7 @@
     "@uiw/codemirror-themes": "^4.23.10"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.12.3",
+    "@ntnyq/eslint-config": "^4.0.2",
     "@ntnyq/prettier-config": "^2.0.0",
     "bumpp": "^10.1.0",
     "eslint": "^9.22.0",
