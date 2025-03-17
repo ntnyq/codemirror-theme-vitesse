@@ -31,14 +31,14 @@
         "default": "./dist/index.cjs"
       }
     },
-    "./light": {
+    "./black": {
       "import": {
-        "types": "./dist/themes/light.d.ts",
-        "default": "./dist/themes/light.js"
+        "types": "./dist/themes/black.d.ts",
+        "default": "./dist/themes/black.js"
       },
       "require": {
-        "types": "./dist/themes/light.d.cts",
-        "default": "./dist/themes/light.cjs"
+        "types": "./dist/themes/black.d.cts",
+        "default": "./dist/themes/black.cjs"
       }
     },
     "./dark": {
@@ -51,14 +51,14 @@
         "default": "./dist/themes/dark.cjs"
       }
     },
-    "./black": {
+    "./light": {
       "import": {
-        "types": "./dist/themes/black.d.ts",
-        "default": "./dist/themes/black.js"
+        "types": "./dist/themes/light.d.ts",
+        "default": "./dist/themes/light.js"
       },
       "require": {
-        "types": "./dist/themes/black.d.cts",
-        "default": "./dist/themes/black.cjs"
+        "types": "./dist/themes/light.d.cts",
+        "default": "./dist/themes/light.cjs"
       }
     }
   },
@@ -72,7 +72,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint .",
+    "lint": "eslint",
     "play": "pnpm -C playground run dev",
     "play:build": "pnpm -C playground run build",
     "prepare": "husky",
@@ -91,7 +91,7 @@
     "@uiw/codemirror-themes": "^4.23.10"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.12.3",
+    "@ntnyq/eslint-config": "^4.0.2",
     "@ntnyq/prettier-config": "^2.0.0",
     "bumpp": "^10.1.0",
     "eslint": "^9.22.0",
@@ -105,13 +105,8 @@
   "engines": {
     "node": ">=18.18.0"
   },
-  "pnpm": {
-    "overrides": {
-      "@codemirror/state": "^6.5.2"
-    }
-  },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,vue,json,md,yml,yaml}": "eslint --fix",
+    "*.{js,ts,mjs,cjs,vue,md,yml,yaml,json}": "eslint --fix",
     "*.{css,html}": "prettier -wu"
   }
 }

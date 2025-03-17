@@ -20,7 +20,11 @@ const code = defineModel<string>()
 
 const resolvedExtensions = computed<Extension[]>(() => [
   ...[props.extensions ?? []],
-  ...[props.language ? [languages.find(item => item.id === props.language)!.extension()] : []],
+  ...[
+    props.language
+      ? [languages.find(item => item.id === props.language)!.extension()]
+      : [],
+  ],
 ])
 </script>
 

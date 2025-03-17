@@ -11,7 +11,9 @@ export const defaultSettingsVitesseDark: CreateThemeOptions['settings'] = {
   gutterForeground: '#dedcd550',
 }
 
-export const createVitesseDarkTheme = (options: Partial<CreateThemeOptions> = {}) => {
+export const createVitesseDarkTheme = (
+  options: Partial<CreateThemeOptions> = {},
+) => {
   const { theme = 'dark', settings = {}, styles = [] } = options
 
   return createTheme({
