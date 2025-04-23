@@ -9,15 +9,15 @@ Codemirror theme in vitesse style.
 
 ## Install
 
-```bash
+```shell
 npm install codemirror-theme-vitesse
 ```
 
-```bash
+```shell
 yarn add codemirror-theme-vitesse
 ```
 
-```bash
+```shell
 pnpm add codemirror-theme-vitesse
 ```
 

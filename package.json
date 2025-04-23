@@ -70,16 +70,17 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint": "eslint",
     "play": "pnpm -C playground run dev",
     "play:build": "pnpm -C playground run build",
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
-    "release": "run-s release:check release:publish",
+    "release": "run-s release:check release:version release:publish",
     "release:check": "run-s lint typecheck",
-    "release:publish": "bumpp && pnpm publish",
+    "release:publish": "pnpm publish",
+    "release:version": "bumpp",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -99,7 +100,7 @@
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.1",
     "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
+    "tsdown": "^0.11.4",
     "typescript": "^5.8.3"
   },
   "engines": {

@@ -33,7 +33,8 @@
     "lezer",
     "pnpm",
     "shikijs",
-    "tsup",
+    "tsdown",
+    "unrs",
     "vite",
     "vitesse",
     "vueuse"

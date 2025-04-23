@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { version } from '../../../package.json'
+import { repository, version } from '../../../package.json'
 import { toggleDark } from '../hooks/useDark'
 </script>
 
@@ -21,7 +21,7 @@ import { toggleDark } from '../hooks/useDark'
         <div class="i-ri:sun-line dark:i-ri:moon-line" />
       </button>
       <a
-        href="https://github.com/ntnyq/codemirror-theme-vitesse"
+        :href="`https://github.com/${repository}`"
         target="_blank"
         rel="noopener noreferrer"
         class="btn-icon"

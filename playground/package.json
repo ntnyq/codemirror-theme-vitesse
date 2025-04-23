@@ -7,7 +7,7 @@
     "build": "vite build",
     "dev": "vite"
   },
-  "dependencies": {
+  "devDependencies": {
     "@codemirror/lang-css": "^6.3.1",
     "@codemirror/lang-html": "^6.4.9",
     "@codemirror/lang-javascript": "^6.2.3",
@@ -20,15 +20,13 @@
     "@codemirror/language": "^6.11.0",
     "@iconify-json/ri": "^1.2.5",
     "@unocss/reset": "66.1.1",
+    "@vitejs/plugin-vue": "^5.2.4",
     "@vueuse/core": "^13.1.0",
     "codemirror": "^6.0.1",
     "codemirror-theme-vitesse": "workspace:*",
+    "unocss": "^66.1.1",
+    "vite": "^6.3.5",
     "vue": "^3.5.13",
     "vue-codemirror": "^6.1.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.4",
-    "unocss": "^66.1.1",
-    "vite": "^6.3.5"
   }
 }

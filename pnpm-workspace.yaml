@@ -1,8 +1,11 @@
 packages:
   - .
   - playground
+
 overrides:
   '@codemirror/state': ^6.5.2
-  esbuild: ^0.25.1
+  esbuild: ^0.25.4
+
 onlyBuiltDependencies:
   - esbuild
+  - unrs-resolver

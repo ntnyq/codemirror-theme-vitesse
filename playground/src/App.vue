@@ -47,7 +47,7 @@ watch(
 <template>
   <main class="h-screen flex flex-col relative">
     <Navbar />
-    <div class="max-w-[1200px] mx-auto md:flex gap-4">
+    <div class="max-w-1200px mx-auto md:flex gap-4">
       <Select
         v-model="language"
         :options="languageOptions"
@@ -78,7 +78,7 @@ watch(
         label="Dark Theme"
       />
     </div>
-    <div class="flex-auto w-full p-4 max-w-[1200px] mx-auto of-y-auto">
+    <div class="flex-auto w-full p-4 max-w-1200px mx-auto of-y-auto">
       <CodeEditor
         v-model="code"
         :language="language"
