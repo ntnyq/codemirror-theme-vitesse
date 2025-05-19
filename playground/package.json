@@ -10,7 +10,7 @@
   "devDependencies": {
     "@codemirror/lang-css": "^6.3.1",
     "@codemirror/lang-html": "^6.4.9",
-    "@codemirror/lang-javascript": "^6.2.3",
+    "@codemirror/lang-javascript": "^6.2.4",
     "@codemirror/lang-json": "^6.0.1",
     "@codemirror/lang-less": "^6.0.2",
     "@codemirror/lang-markdown": "^6.3.2",
@@ -19,14 +19,14 @@
     "@codemirror/lang-yaml": "^6.1.2",
     "@codemirror/language": "^6.11.0",
     "@iconify-json/ri": "^1.2.5",
-    "@unocss/reset": "66.1.1",
+    "@unocss/reset": "66.1.2",
     "@vitejs/plugin-vue": "^5.2.4",
-    "@vueuse/core": "^13.1.0",
+    "@vueuse/core": "^13.2.0",
     "codemirror": "^6.0.1",
     "codemirror-theme-vitesse": "workspace:*",
-    "unocss": "^66.1.1",
+    "unocss": "^66.1.2",
     "vite": "^6.3.5",
-    "vue": "^3.5.13",
+    "vue": "^3.5.14",
     "vue-codemirror": "^6.1.1"
   }
 }
