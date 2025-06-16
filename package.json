@@ -64,13 +64,13 @@
   "dependencies": {
     "@codemirror/state": "^6.5.2",
     "@lezer/highlight": "^1.2.1",
-    "@uiw/codemirror-themes": "^4.23.12"
+    "@uiw/codemirror-themes": "^4.23.13"
   },
   "devDependencies": {
     "@ntnyq/eslint-config": "^4.3.0",
     "@ntnyq/prettier-config": "^2.2.0",
     "bumpp": "^10.1.1",
-    "eslint": "^9.28.0",
+    "eslint": "^9.29.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
