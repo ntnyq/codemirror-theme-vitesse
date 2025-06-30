@@ -20,7 +20,7 @@
     "@codemirror/language": "^6.11.2",
     "@iconify-json/ri": "^1.2.5",
     "@unocss/reset": "66.3.2",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.0",
     "@vueuse/core": "^13.4.0",
     "codemirror": "^6.0.2",
     "codemirror-theme-vitesse": "workspace:*",
