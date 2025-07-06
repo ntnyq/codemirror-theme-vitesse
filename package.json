@@ -64,22 +64,19 @@
   "dependencies": {
     "@codemirror/state": "^6.5.2",
     "@lezer/highlight": "^1.2.1",
-    "@uiw/codemirror-themes": "^4.23.14"
+    "@uiw/codemirror-themes": "^4.24.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^4.3.0",
+    "@ntnyq/eslint-config": "^5.0.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "bumpp": "^10.2.0",
-    "eslint": "^9.30.0",
+    "eslint": "^9.30.1",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
     "tsdown": "^0.12.9",
     "typescript": "^5.8.3"
-  },
-  "engines": {
-    "node": ">=18.18.0"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,md,yml,yaml,json}": "eslint --fix",
