@@ -1,7 +1,7 @@
 {
   "name": "codemirror-theme-vitesse",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "packageManager": "pnpm@10.12.4",
   "description": "Codemirror theme in vitesse style.",
   "keywords": [
