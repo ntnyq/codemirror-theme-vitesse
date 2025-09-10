@@ -91,8 +91,8 @@ importers:
         specifier: ^1.2.5
         version: 1.2.5
       '@unocss/reset':
-        specifier: 66.4.2
-        version: 66.4.2
+        specifier: 66.5.0
+        version: 66.5.0
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
         version: 6.0.1(vite@7.1.5(jiti@2.5.1)(yaml@2.8.1))(vue@3.5.21(typescript@5.9.2))
@@ -966,8 +966,8 @@ packages:
   '@unocss/preset-wind@66.5.1':
     resolution: {integrity: sha512-YucMFPBa3Gwuxdtk+GlqWWcnCwMpzUJWkiB3BNyGk4wEJ0S/brkC+t1/DKpagOFLK9bc134mLxqLNDMWJwVbrg==}
 
-  '@unocss/reset@66.4.2':
-    resolution: {integrity: sha512-s3Kq4Q6a/d3/jYe6HTCfXUx7zYAYufetId5n66DZHzQxpeu6CoBS83+b37STTKsw27SOgV28cPJlJtZ6/D6Bhw==}
+  '@unocss/reset@66.5.0':
+    resolution: {integrity: sha512-Sf27NbbNUg3e4BShQB7EsMCS1GtA6IORBm08SitSpUZZYOZAj+LAypYsOJ4rttAFs/Hp1h0AxtNShesXWK66oA==}
 
   '@unocss/reset@66.5.1':
     resolution: {integrity: sha512-NXDjDUn3cjATkxr7bbPdVnKkUHzEq6wSC1IRpnO8ISAXCw6JGPjuk3WJVYxHhnAlszhDxdqxVBjWRZ+zzVmrZw==}
@@ -3605,7 +3605,7 @@ snapshots:
       '@unocss/core': 66.5.1
       '@unocss/preset-wind3': 66.5.1
 
-  '@unocss/reset@66.4.2': {}
+  '@unocss/reset@66.5.0': {}
 
   '@unocss/reset@66.5.1': {}
 
