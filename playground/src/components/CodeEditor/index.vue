@@ -32,8 +32,8 @@ const resolvedExtensions = computed<Extension[]>(() => [
   <Codemirror
     v-model="code"
     v-bind="$attrs"
-    :indent-with-tab="indentWithTab"
-    :tab-size="tabSize"
+    :indent-with-tab
+    :tab-size
     :extensions="resolvedExtensions"
   />
 </template>

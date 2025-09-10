@@ -81,7 +81,7 @@ watch(
     <div class="flex-auto w-full p-4 max-w-1200px mx-auto of-y-auto">
       <CodeEditor
         v-model="code"
-        :language="language"
+        :language
         :extensions="activeTheme"
         class="flex-1 w-full"
       />
