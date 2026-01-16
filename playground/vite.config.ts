@@ -7,10 +7,15 @@ export default defineConfig({
     // https://github.com/codemirror/dev/issues/608
     exclude: ['@codemirror/state'],
   },
+
   plugins: [
     Vue(),
     UnoCSS({
       inspector: false,
     }),
   ],
+
+  resolve: {
+    dedupe: ['@codemirror/state'],
+  },
 })
