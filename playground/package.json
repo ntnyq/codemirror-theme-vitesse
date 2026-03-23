@@ -20,13 +20,13 @@
     "@codemirror/language": "^6.12.2",
     "@iconify-json/ri": "^1.2.10",
     "@unocss/reset": "66.6.6",
-    "@vitejs/plugin-vue": "^6.0.4",
+    "@vitejs/plugin-vue": "^6.0.5",
     "@vueuse/core": "^14.2.1",
     "codemirror": "^6.0.2",
     "codemirror-theme-vitesse": "workspace:*",
     "unocss": "^66.6.6",
     "vite": "^7.3.1",
-    "vue": "^3.5.29",
+    "vue": "^3.5.30",
     "vue-codemirror": "^6.1.1"
   }
 }
