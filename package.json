@@ -2,7 +2,7 @@
   "name": "codemirror-theme-vitesse",
   "type": "module",
   "version": "0.3.0",
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@10.33.0",
   "description": "Codemirror theme in vitesse style.",
   "keywords": [
     "codemirror",
@@ -47,6 +47,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
+    "format": "prettier -wu .",
     "lint": "eslint",
     "play": "pnpm -C playground run dev",
     "play:build": "pnpm -C playground run build",
@@ -63,22 +64,22 @@
   "dependencies": {
     "@codemirror/state": "^6.6.0",
     "@lezer/highlight": "^1.2.3",
-    "@uiw/codemirror-themes": "^4.25.8"
+    "@uiw/codemirror-themes": "^4.25.9"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.9.0",
+    "@ntnyq/eslint-config": "^6.0.0-beta.15",
     "@ntnyq/prettier-config": "^3.0.1",
     "bumpp": "^11.0.1",
-    "eslint": "^9.39.4",
+    "eslint": "^10.1.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.8.1",
-    "tsdown": "^0.21.3",
-    "typescript": "^5.9.3"
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
   },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,vue,md,yml,yaml,json}": "eslint --fix",
+    "*.{js,ts,mjs,tsx,vue,md,yml,yaml,json}": "eslint --fix",
     "*.{css,html}": "prettier -wu"
   }
 }
