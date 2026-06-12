@@ -1,10 +1,6 @@
 packages:
   - playground
 
-overrides:
-  '@codemirror/state': ^6.6.0
-  esbuild: ^0.28.0
-
 allowBuilds:
   unrs-resolver: true
 
