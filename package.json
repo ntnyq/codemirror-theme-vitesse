@@ -76,7 +76,7 @@
     "npm-run-all2": "^9.0.1",
     "prettier": "^3.8.4",
     "tsdown": "^0.22.2",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   },
   "nano-staged": {
     "*.{js,ts,mjs,tsx,vue,md,yml,yaml,json}": "eslint --fix",
